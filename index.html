@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>ToDo List</title>
+    <style>
+        ul{
+            width: 500px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            border: 1px solid #ccc;
+            background: #eee;
+            padding: 5px 10px;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-
-<script>
-
-</script>
+    <h1>ToDo List</h1>
+    <p>
+        <button id="btnAdd">New Item</button>
+    </p>
+    <ul id="todoList">
+    </ul>
+<script src="todo.js"></script>
 </body>
 </html>
