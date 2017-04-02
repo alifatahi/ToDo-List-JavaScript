@@ -16,12 +16,23 @@
             padding: 5px 10px;
             color: #000;
         }
+        li span{
+            padding-left: 5px;
+            cursor: default;
+        }
+        .checked{
+            text-decoration: line-through;
+            color: #0cc;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
     <h1>ToDo List</h1>
     <p>
-        <button id="btnAdd">New Item</button>
+        <input type="text" id="inItemText">
+
     </p>
     <ul id="todoList">
     </ul>
