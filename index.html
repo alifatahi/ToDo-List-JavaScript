@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>ToDo List</title>
-    <style>
-        ul{
-            width: 500px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li{
-            border: 1px solid #ccc;
-            background: #eee;
-            padding: 5px 10px;
-            color: #000;
-        }
-        li span{
-            padding-left: 5px;
-            cursor: default;
-        }
-        .checked{
-            text-decoration: line-through;
-            color: #0cc;
-            font-weight: bold;
-        }
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    </style>
 </head>
 <body>
-    <h1>ToDo List</h1>
-    <p>
-        <input type="text" id="inItemText">
 
-    </p>
-    <ul id="todoList">
-    </ul>
-<script src="todo.js"></script>
+<div class="container">
+    <div class="jumbotron">
+        <h1>ToDo List With JS</h1>
+        <p>Add Your Daily Task and Never Forget Them Again</p>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-5" id="main">
+            <h4 >Please Add Your Task:</h4>
+            <h6>(For
+                Remove Double Click on Task & for Update Them Just Click On Them)</h6>
+            <p>
+                <input type="text" id="inItemText" >
+            </p>
+            <ul id="todoList">
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/todo.js"></script>
 </body>
 </html>
